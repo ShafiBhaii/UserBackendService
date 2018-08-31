@@ -6,16 +6,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class UserModel {
 	@Id
-	private Integer id=0;
+	private Integer id = 0;
 	private String name;
 	private String email;
 	private String password;
 	private String gender;
 	private String phoneNo;
-	
-	public UserModel() {};
-	
-	public UserModel(Integer id,String name, String email, String password, String gender, String phoneNo) {
+
+	public UserModel() {
+	};
+
+	public UserModel(Integer id, String name, String email, String password, String gender, String phoneNo) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -23,7 +24,6 @@ public class UserModel {
 		this.password = password;
 		this.gender = gender;
 		this.phoneNo = phoneNo;
-		
 	}
 
 	public Integer getId() {
